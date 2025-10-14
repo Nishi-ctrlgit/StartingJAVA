@@ -1,15 +1,26 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "compile and run",
-      "type": "shell",
-      "command": "javac ${file} && java ${fileBasenameNoExtension} <input.txt> output.txt",
-      "group":
-      {
-        "kind": "build",
-        "isDefault": true
-      }
-   }
-  ]
- }
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Java File",
+            "type": "shell",
+            "command": "javac \"${file}\" && java \"${fileBasenameNoExtension}\"",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run C File",
+            "type": "shell",
+            "command": "gcc \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
+
