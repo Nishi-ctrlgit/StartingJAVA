@@ -17,21 +17,19 @@
 
  //print linearly from 1 to n
  #include<stdio.h>
- 
  count=1;
- Linear(n)
+ Linear()
  {
-  if(count<=n)
+  if(count<=4)
   return;
   printf("%d\n",count);
   count++;
-  Linear(n);
+  Linear();
  }
  main()
  {
-  int n;
-  printf("Enter n: \n");
-  scanf("%d",&n);
-  Linear(n);
+  Linear();
  }
+
+
  

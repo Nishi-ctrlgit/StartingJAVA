@@ -1,0 +1,12 @@
+{
+ "files.associations": {
+  "*.asset": "xml",
+  "*.meta": "xml",
+  "*.unity": "xml",
+  "*.prefab": "xml",
+  "merge sort.C": "cpp",
+  "Merge_tech.C": "cpp",
+  "Merge_sort.C": "cpp",
+  "Quick_sort.C": "cpp"
+ }
+}
